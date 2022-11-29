@@ -1,0 +1,8 @@
+@import "training-defaults";
+@import "addons";
+@import "training";
+
+.training {
+  @include addons;
+  @include training;
+}

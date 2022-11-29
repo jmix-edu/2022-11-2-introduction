@@ -1,0 +1,90 @@
+@import "../helium/helium";
+
+@mixin training {
+  @include helium;
+
+  /* Accordion */
+  --accordion-item-content-background-color: #FFF0EA;
+
+  /* Basic */
+  --background-color: #FFF0EA;
+  --background-color_rgb: 255, 240, 234;
+  --primary-color: #A351FF;
+  --primary-color_rgb: 163, 81, 255;
+
+  /* Button */
+  --button-default-text-color: #FFD125;
+
+  /* CheckBox */
+  --checkbox-background-color: #FFF0EA;
+  --checkbox-checked-background-color: #FFF0EA;
+  --checkbox-read-only-background-color: #FFF0EA;
+  --checkbox-read-only-checked-background-color: #FFF0EA;
+  --checkbox-read-only-checked-focused-background-color: #FFF0EA;
+  --checkbox-read-only-focused-background-color: #FFF0EA;
+
+  /* ColorPicker */
+  --colorpicker-buttons-panel-background-color: #FFF0EA;
+
+  /* ComboBox */
+  --combobox-no-input-background-color: #FFF0EA;
+
+  /* DateField */
+  --datefield-calendarpanel-day-background-color: #FFF0EA;
+  --datefield-popup-background-color: #FFF0EA;
+
+  /* DatePicker */
+  --datepicker-background-color: #FFF0EA;
+
+  /* FileUpload */
+  --fileupload-dropzone-prompt-background-color: #FFF0EA;
+
+  /* FoldersPane */
+  --folders-pane-background-color: #FFF0EA;
+
+  /* Grid */
+  --grid-background-color: #FFF0EA;
+  --grid-row-color: #FFF0EA;
+  --grid-sidebar-popup-background-color: #FFF0EA;
+
+  /* Main Window */
+  --maintabsheet-tabcontainer-background-color: #FFF0EA;
+
+  /* NativeSelect */
+  --select-background-color: #FFF0EA;
+
+  /* Pagination */
+  --pagination-page-text-color: #FFD125;
+
+  /* Panel */
+  --panel-background-color: #FFF0EA;
+
+  /* PickerField */
+  --pickerfield-button-background-color: #FFF0EA;
+  --pickerfield-button-hover-background-color: #FFF0EA;
+
+  /* PivotTable */
+  --pivot-background-color: #FFF0EA;
+
+  /* SelectionOverlay (ContextMenu) */
+  --overlay-background-color: #FFF0EA;
+
+  /* SourceCodeEditor */
+  --sourcecodeeditor-background-color: #FFF0EA;
+
+  /* TabSheet */
+  --tabsheet-framed-content-background-color: #FFF0EA;
+  --tabsheet-framed-tabcontainer-background-color: #FFF0EA;
+
+  /* Table */
+  --table-background-color: #FFF0EA;
+  --table-row-color: #FFF0EA;
+
+  /* TextField */
+  --textfield-background-color: #FFF0EA;
+
+  /* Window */
+  --window-background-color: #FFF0EA;
+  --window-header-background-color: #FFF0EA;
+
+}

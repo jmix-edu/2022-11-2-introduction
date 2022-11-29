@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<window xmlns="http://jmix.io/schema/ui/window"
+        xmlns:chart="http://jmix.io/schema/ui/charts"
+        caption="msg://piechartScreen.caption">
+    <data>
+        <keyValueCollection id="tasksDc">
+            <loader id="tasksDl">
+                <query>
+                    <![CDATA[select e.priority, count(e) from tm_Task e group by e.priority]]>
+                </query>
+            </loader>
+            <properties>
+                <property name="priority"/>
+                <property name="count" datatype="int"/>
+            </properties>
+        </keyValueCollection>
+    </data>
+    <facets>
+        <dataLoadCoordinator auto="true"/>
+    </facets>
+    <layout>
+        <chart:pieChart id="pieChart"
+                        width="100%"
+                        height="100%"
+                        dataContainer="tasksDc"
+                        titleField="priority"
+                        valueField="count">
+           <!-- <chart:data>
+                <chart:item>
+                    <chart:property name="priority" value="low"/>
+                    <chart:property name="count" value="3"/>
+                </chart:item>
+                <chart:item>
+                    <chart:property name="priority" value="high"/>
+                    <chart:property name="count" value="4"/>
+                </chart:item>
+            </chart:data>-->
+        </chart:pieChart>
+    </layout>
+</window>
